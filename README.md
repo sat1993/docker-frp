@@ -29,6 +29,8 @@ docker-frp可以快速启动frps服务或frpc客户端.
 
 2. 通过配置启动一个frpc客户端。
 
+  仅能代理Docker容器内的服务。如果需要代理宿主机的服务，需要在宿主机上启动客户端。而不是在Docker中。
+
   [frpc配置参考](https://github.com/fatedier/frp/blob/master/conf/frpc_full.ini)
 
   ```
