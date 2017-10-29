@@ -60,7 +60,13 @@ docker-frp可以快速启动frps服务或frpc客户端.
   [common]
   bind_port = 7000
 
+  # Run with your config file
   ~ docker run -d -v conf/:/home/conf -e FRP=client -e CONFIG=frps.ini sat1993/frp
+
+  or
+
+  # Run with default config file.
+  ~ docker run -d -v conf/:/home/conf -e FRP=client sat1993/frp
 
   ```
 

@@ -12,7 +12,7 @@ if [ -n "$FRP" ] && [ "$FRP" == "server" ]; then
   ARGS="frps"
   if [ -z "$CONFIG" ]; then
     # server端没有配置可以使用默认配置.
-    echo "[common]\nbind_port=7000" > /home/conf/default.ini
+    echo -e "[common]\nbind_port=7000" > /home/conf/default.ini
     echo "Not Find Server Config File"
     echo "Use tcp port 7000 run frp server"
     CONFIG="default.ini"
